@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ImagefyKotlin</string>
+    <string name="change_image">Change image</string>
+    <string name="press">Press</string>
+    <string name="img">img</string>
+    <string name="img_bg"><![CDATA[https://www.google.com/imgres?q=uzbekistan&imgurl=https%3A%2F%2Fpohcdn.com%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fnode__blog_post__bp_banner%2Fpublic%2Flive_banner%2FUzbekistan.jpg&imgrefurl=https%3A%2F%2Fguide.planetofhotels.com%2Fen%2Fuzbekistan&docid=iE8Q2zSg2Xp0TM&tbnid=caFyFHBD8W6DmM&vet=12ahUKEwipoZeKy42PAxVXQlUIHbgeOZ4QM3oECCAQAA..i&w=1080&h=683&hcb=2&ved=2ahUKEwipoZeKy42PAxVXQlUIHbgeOZ4QM3oECCAQAA]]></string>
+</resources>
