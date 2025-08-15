@@ -2,6 +2,7 @@ package com.example.imagefykotlin
 
 import android.os.Bundle
 import android.util.Log
+import android.view.View
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -28,21 +29,15 @@ class MainActivity : AppCompatActivity() {
         }
         binding.button.setOnClickListener {
             Picasso.get().load("https://dummyjson.com/image/150").into(
-                binding.img, object : Callback {
+                binding.img, object : Callback{
                     override fun onError(e: Exception?) {
-                        Toast.makeText(
-                            this@MainActivity,
-                            "Image is loaded successfully!!!",
-                            Toast.LENGTH_LONG
-                        ).show()
+                        binding.pBar.visibility = View.VISIBLE
+                        Toast.makeText(this@MainActivity, "Something went wrong!!!", Toast.LENGTH_LONG).show()
                     }
 
                     override fun onSuccess() {
-                        Toast.makeText(
-                            this@MainActivity,
-                            "Something went wrong!!!",
-                            Toast.LENGTH_LONG
-                        ).show()
+                        binding.pBar.visibility = View.INVISIBLE
+                        Toast.makeText(this@MainActivity, "Success!!!", Toast.LENGTH_LONG).show()
                     }
                 }
             )
